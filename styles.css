@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", sans-serif;
+}
+
+*{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.navbar__logo{
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.navbar__notch{
+    background-color: #f7f7f7ff;
+    padding: 8px 20px 8px 28px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+}
+
+.navbar__notch p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar__notch p::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    left: -8px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: -10px;
+}
+
+.navbar__notch a{
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar__notch a::before{
+    position: absolute;
+    content: "New";
+    padding: 2px 6px;
+    background-color: #d85f44;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    top: -18px;
+    right: -12px;
+}
+.navbar__menu{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.navbar__menu-link{
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+    background: #f7f7f7ff;
+    padding: 6px 16px ;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+.navbar__menu-link:hover,
+.hero-course__mode-option.Selected,
+.hero-course__duration-option.selected{
+    color: #000000;
+    background: #b5e3f3;
+    border-color: transparent;
+}
+.hero{
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 100px);
+    gap: 3rem;
+    padding: 0 40px;
+}
+
+.hero__image{
+    width: 50%;
+    height: 100%;
+    border-radius: 3rem;
+}
+
+.hero-course{
+    width: 50%;
+}
+
+.hero-course__title{
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-course__author{
+    display: inline;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.hero-course__rating{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-course__stars{
+    display: flex;
+    font-size: 1rem;
+}
+
+.hero-course__reviews{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero-course__label{
+    margin: 1.5rem 0 0.7rem;
+    font-size: 1rem;
+}
+
+.hero-course__mode-option,
+.hero-course__duration-option,
+.hero-course__button{
+    padding: 0.4rem 1rem;
+    margin-left: 0.4rem;
+    border-radius: 2rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.hero-course__mode-option:hover,
+.hero-course__duration-option:hover,
+.hero-course__button:hover{
+    background: #f7f7f7;
+}
+
+.hero-course__actions{
+    margin-top: 2rem;
+}
+.hero-course__price{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.hero-course__price-original{
+    margin-left: 0.5rem;
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.hero-course__button{
+    padding: 0.8rem;
+    transition: all ease 0.3s;
+}
+
+.hero-course__button--enroll{
+    background: #62b4dd;
+    border-color: transparent;
+    color: #fff;
+}
+
+.hero-course__button--enroll:hover{
+    background: #4abb4f;
+}
+
+.separator{
+    display: block;
+    margin: 4rem 0.4rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0 40px;
+}
+
+.program{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 40px;
+}
+
+.program__image{
+    width: 45%;
+}
+
+.program__image-photo{
+    width: 100%;
+    height: 540px;
+    border-radius: 2rem;
+}
+
+.program__info{
+    width: 55%;
+}
+
+.program__title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.program__description{
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.program__details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.program__label{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.program_-duration-list,
+.program__format-list{
+    list-style: none;
+}
+
+.program__duration-item,
+.program__format-item{
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.course-list{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 40px;
+}
+
+.course-list__item{
+    width: 25%;
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-list__item-image{
+    width: 100%;
+    height: 400px;
+    border-radius: 0.5rem;
+}
+
+.course-list__item-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem 0 1.5rem;
+}
+
+.course-list__item-title,
+.course-list__item-price{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.course-list__item-price span{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.course-list__item-description{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.course-list__item-button{
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+.course-list__item-button:hover{
+    background: #b5e3f3;
+    color: #000;
+    border-color: transparent;
+}
